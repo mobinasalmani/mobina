@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    direction: rtl;
+    text-align: jastify;
+font-family: vazir;
+}
+div#banner{
+    background-image: radial-gradient(circle, #ff80ff, #f97bfc, #f376fa, #ed71f7, #e76cf5, #be84ff, #9595ff, #73a1ff, #00bbff, #00d2ff, #00e6fd, #02f6e6);
+    color: black;
+    height: 120px;
+}
+div#banner>h1{
+    background: yellow;
+    height: 55px;
+}
+#TEXT{
+    color: blue;
+    font-size: x-large
+}
+#secondtext{
+    color: #9595ff;
+    font-family: IranNastaliq;
+}
+#mm{
+    color: purple
+}
+article, #banner, footer{
+    padding: 20px;
+}
