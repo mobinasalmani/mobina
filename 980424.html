@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            direction: rtl;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid #91fbff;
+            text-align: right;
+            padding: 8px;
+        }
+        tr:first-child{
+            background: rgb(255, 0, 0);
+            color: black;
+            font-family:thoma;
+            font-size: xx-large
+        }
+        tr:nth-child(2){
+            background: #ff9721;
+        }
+        tr:nth-child(3){
+            background: #fffb0a;
+        }
+        tr:nth-child(4){
+            background: #3af800;
+        }
+        tr:nth-child(5){
+            background: #0e1eff;
+        }
+        tr:nth-child(6){
+            background: #03f0c8;
+        }
+        tr:not(:first-child):hover{
+            background: rgb(190, 0, 190)
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>نام</th>
+            <th>نام خانوادگی</th>
+            <th>سن</th>
+        </tr>
+        <tr>
+            <td>حنانه</td>
+            <td>ملکی</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>تینا</td>
+            <td>ترابی</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>مهسا</td>
+            <td>ستاری</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>نرگس</td>
+            <td>حقانی</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>سارا</td>
+            <td>کریمی</td>
+            <td>18</td>
+        </tr>
+    </table>
+</body>
+</html>
