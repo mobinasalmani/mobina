@@ -1,0 +1,96 @@
+body {
+    direction: rtl;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid #cd0ddf;
+    text-align: right;
+    padding: 8px;
+}
+
+tr:first-child {
+    background: rgb(255, 0, 0);
+    color: black;
+    font-family: thoma;
+    font-size: xx-large
+}
+
+tr:nth-child(2) {
+    background: #ff9721;
+}
+
+tr:nth-child(3) {
+    background: #fffb0a;
+}
+
+tr:nth-child(4) {
+    background: #3af800;
+}
+
+tr:nth-child(5) {
+    background: #0e1eff;
+}
+
+tr:nth-child(6) {
+    background: #03f0c8;
+}
+
+tr:not(:first-child):hover {
+    background: rgb(190, 0, 190)
+}
+#banner{
+    background-color: gold;
+    text-align: center;
+    width: 100%;
+}
+#layout{
+    background-color:  rgb(250, 0, 104);
+    width: 20%;
+    text-align: center;
+}
+#google{
+    text-decoration: none;
+    color: brown;
+}
+.home{
+    background-color: rgb(250, 0, 104);
+    text-align: center;
+    width: 15%;
+    cursor: pointer;
+}
+.home1{
+    width: 40%;
+    background-color: rgb(250, 0, 104);
+}
+#picture1{
+    width:400px;
+    height:200px;
+}
+#layout2{
+    background-color: rgb(250, 0, 104) ;
+    text-align: justify;
+    width: 25%;
+}
+#layout3{
+    background-color:   rgb(250, 0, 104);
+    text-align: justify;
+}
+#layout4{
+    background-color: rgb(250, 0, 104);
+    text-align: justify;
+}
+footer{
+    background-color:  rgb(250, 0, 104);
+    width: 100%;
+    height: 100px;
+}
+.home:hover{
+background-color: rgb(0, 168, 8)
+}
