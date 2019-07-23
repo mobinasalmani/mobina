@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 1rem;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 1rem;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background: #fd01a9
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            padding: 10px;
+            background-color: #cccccc;
+            height: 250px;
+        }
+
+        .column a {
+            float: none;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 100%;
+            left: 0;
+            z-index: 1;
+        }
+
+        .dropdown-content .header {
+            background: red;
+            padding: 16px;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">news</a>
+        <div class="dropdown">
+            <button class="dropbtn">products
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+                <div class="header">
+                    <h2>mega menu</h2>
+                </div>
+                <div class="column">
+                    <h3>category</h3>
+                    <a href="#">link1</a>
+                    <a href="#">link2</a>
+                    <a href="#">link3</a>
+                </div>
+                <div class="column">
+                    <h3>category 2</h3>
+                    <a href="#">link1</a>
+                    <a href="#">link2</a>
+                    <a href="#">link3</a>
+                </div>
+                <div class="column">
+                    <h3>category 3</h3>
+                    <a href="#">link1</a>
+                    <a href="#">link2</a>
+                    <a href="#">link3</a>
+                </div>
+
+            </div>
+</body>
+
+</html>
