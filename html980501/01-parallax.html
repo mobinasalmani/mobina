@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html{
+            height: 100%;
+        }
+    .parallax{
+        background-image: url('images/Tree-Of-Life-1600.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:100%;
+        background-attachment: fixed;
+
+    }
+    .content{
+        padding: 20px;
+        background: #f2f2f2;
+        font-size: 2rem;
+    }
+    .footer{
+        padding: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nam debitis dolores qui in, corrupti aliquam ex ullam error! Reiciendis ab delectus iste numquam unde inventore, atque maiores neque consequuntur.</div>
+    <div class="parallax"></div>
+    <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nam debitis dolores qui in, corrupti aliquam ex ullam error! Reiciendis ab delectus iste numquam unde inventore, atque maiores neque consequuntur.</div>
+    <div class="parallax"></div>
+    <div class="footer">
+        footer
+        <a href="#">go to top</a>
+    </div>
+</body>
+</html>

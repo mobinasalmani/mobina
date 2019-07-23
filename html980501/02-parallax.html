@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parallax</title>
+    <style>
+    body, html{
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777;
+    }
+    .bgimg-1, .bgimg-2, .bgimg-3{
+        position: relative;
+        opacity: .65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bgimg-1{
+        background-image: url('images/omidlm.jpg');
+        min-height: 100%;
+    }
+    .bgimg-2{
+        background-image: url('images/omidlm1.jpg');
+        min-height: 100%;
+    }
+    .caption{
+        position: absolute;
+        left: 0;
+        top:50%;
+        width: 100%;
+        text-align:center;
+        color: #000;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Scroll Down</span>
+        </div>
+    </div>
+    <div class="content">
+        <h3></h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt adipisci, nostrum molestiae esse
+            doloremque quae quo voluptatum exercitationem aliquam aspernatur id velit, unde sit laboriosam error
+            asperiores non odio dolor!
+
+        </p>
+    </div>
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border">Less Hieght</span>
+        </div>
+    </div>
+    <div class="content">
+        <h3></h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt adipisci, nostrum molestiae esse
+            doloremque quae quo voluptatum exercitationem aliquam aspernatur id velit, unde sit laboriosam error
+            asperiores non odio dolor!
+
+        </p>
+    </div>
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border">Scroll Up</span>
+        </div>
+    </div>
+    <div class="content">
+        <h3></h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt adipisci, nostrum molestiae esse
+            doloremque quae quo voluptatum exercitationem aliquam aspernatur id velit, unde sit laboriosam error
+            asperiores non odio dolor!
+
+        </p>
+    </div>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Scroll Down</span>
+        </div>
+    </div>
+</body>
+
+</html>
