@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clear fix</title>
+    <style>
+        div.container {
+            border: 1px solid violet;
+            padding: 5px;
+        }
+        img{
+            width: 170px;
+        }
+        img.rose {
+            float: left;
+        }
+
+        .para {
+            clear: left
+        }
+        .clear-fix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        img.right-rose{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>without clearfix</h2>
+    <div class="container clear-fix">
+        <h2>the title</h2>
+        <img class="rose" src="images\tree4.jpg" alt="rose">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid earum cum et, fugit eos amet harum asperiores
+        nisi rem perspiciatis tempora officia animi ex excepturi assumenda ad eveniet expedita distinctio!
+    </div>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore nisi repudiandae eos ipsum,
+        reprehenderit totam modi, neque, voluptatem optio obcaecati aperiam nobis a laboriosam illo nam hic est itaque?
+    </p>
+    <div class="container clear-fix">
+        <h2>the title</h2>
+        <img class="right-rose" src="images\tree2.jpg" alt="rose">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit distinctio laboriosam iusto asperiores impedit quod fuga consequuntur quo sed hic, sunt aliquid sit ad dolore soluta suscipit provident nesciunt!
+    </div>
+</body>
+
+</html>
