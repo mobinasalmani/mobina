@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div.container{
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    .box{
+        float: left;
+        width: 50%;
+        padding: 50px;
+        border: 1px solid #f2f2f2;
+        height: 450px;
+    }
+    #left-col{
+        background-color: #aaaaaa;
+        color: white;
+    }
+    #right-col{
+        background-color: salmon;
+        color: pink;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="left-col">
+        <h1>title for box1</h1>
+        <h2>subtitle</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla esse, officia quia iste sapiente eveniet provident, minus delectus quibusdam exercitationem laborum ut quaerat enim! Inventore dolore ducimus natus doloribus molestias?</p>
+    </div>
+    <div class="box" id="right-col"> 
+        <h1>title for box2</h1>
+        <h2>subtitle</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla ratione pariatur voluptatem fugiat, ipsum cupiditate amet labore harum? Ex deleniti totam, autem commodi amet ducimus soluta consequuntur? Maiores, vel magnam.</p>
+        <h1>title2</h1>
+        <h2>subtitle</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eum repudiandae quod nemo exercitationem velit. Error facilis eligendi et voluptate quidem, repudiandae iusto non reiciendis sapiente eius tempora optio animi!</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        .container {
+            background: #aaaaaa;
+        }
+
+        .header,
+        footer {
+            background-color: #333333;
+            color: #f2f2f2;
+            text-align: center;
+        }
+        .header>h1, .header>h2{
+            padding: 8px;
+        }
+
+        .row {
+            text-align: left;
+            text-align: justify;
+        }
+
+        .column {
+            float: left;
+            padding: 15px;
+        }
+
+        .menu {
+            width: 25%;
+        }
+
+        .menu>ul {
+            list-style-type: none;
+        }
+
+        .menu>ul>li {
+            padding: 8px;
+            margin-bottom: 8px;
+        }
+
+        .menu>ul>li:hover {
+            background: rgb(206, 206, 206);
+        }
+        .menu>ul>li>a{
+            text-decoration: none;
+        }
+
+        .content {
+            width: 75%;
+        }
+        .content>p{
+            line-height: 20px;
+            max-width: 800px;
+        }
+
+        .clear-fix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .content>h1, .content>h2{
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>header</h1>
+            <h2>my site</h2>
+        </div>
+        <div class="row clear-fix">
+            <div class="column menu">
+                <ul>
+                    <li> <a href="#">item 1</a> </li>
+                    <li> <a href="#">item 2</a> </li>
+                    <li> <a href="#">item 3</a> </li>
+                    <li> <a href="#">item 4</a> </li>
+                </ul>
+            </div>
+            <div class="column content">
+                <h1>the title</h1>
+                <h2>subtitle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus nemo, corporis commodi
+                    temporibus voluptatem aliquid consequuntur voluptas ratione voluptatibus reiciendis deserunt
+                    exercitationem mollitia laborum praesentium perferendis ullam ea eos?</p>
+            </div>
+        </div>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>
