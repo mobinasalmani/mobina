@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container>.row{
+            display:flex;
+            display:-ms-flexbox;
+            display: -webkit-flex;
+        }
+        .container>.row>.column{
+            padding: 10px;
+            height: 300px;
+        }
+        .container>.row>.side{
+            flex: 1;
+            -ms-flex: 1;
+            background: lime
+        }
+        .container>.row>.middle{
+            flex: 2;
+            -ms-flex: 2;
+            background: lightgreen
+        }
+        footer{
+                background: #f1f1f1;
+                text-align: center;
+                padding: 10px;  
+            }
+        @media(max-width:768px){
+            .row{
+                flex-direction: column;
+                -ms-flex-direction: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h2>Header</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column side">Column</div>
+                <div class="column middle">Column</div>
+                <div class="column side">Column</div>
+            </div>
+        </div>
+        <footer><p>Footer</p> </footer>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>variables</title>
+    <style>
+        /* self documentaion */
+    :root{
+        --main-bg-color:#f1f1f1;
+        --second-color:#f2f2f2;
+        --main-padding:20px;
+        --second-padd:40px;
+        --my-margin:10px;
+        --my-border:1px solid black;
+    }
+    body{
+        background: var(--main-bg-color);
+    }
+    #div2{
+        background:var(--second-color);
+        padding:var(--second-padd);
+        border: var(--my-border);
+    }
+    #div1{
+        background: var(--main-bg-color);
+        padding:var(--main-padding);
+        border: var(--my-border);
+    }
+    #div3{
+        border: var(--my-border);
+    }
+    </style>
+</head>
+
+<body>
+    <div id=" div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis earum in fuga,
+        accusamus laborum, atque possimus iure quis, hic nesciunt inventore laudantium illo recusandae commodi est
+        architecto perspiciatis veniam?
+    </div>
+    <div id="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis earum in fuga, accusamus
+        laborum, atque possimus iure quis, hic nesciunt inventore laudantium illo recusandae commodi est architecto
+        perspiciatis veniam?
+    </div>
+    <div id="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis earum in fuga, accusamus
+        laborum, atque possimus iure quis, hic nesciunt inventore laudantium illo recusandae commodi est architecto
+        perspiciatis veniam?
+    </div>
+</body>
+
+</html>

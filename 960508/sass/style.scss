@@ -1,0 +1,14 @@
+$bgcolor:#f1f1f1 ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    background: $bgcolor;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
