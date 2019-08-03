@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css grid</title>
+    <style>
+        body{
+            display: grid;
+            justify-content: center;
+            padding-top: 40px;
+
+        }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+    .grid-item{
+        background: #333333;
+        color: white;
+        border-radius: 2px;
+        padding: 40px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+    </div>
+</body>
+</html>

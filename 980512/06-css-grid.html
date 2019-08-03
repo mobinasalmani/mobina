@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            justify-content: center;
+            padding-top:40px;
+        }
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 150px 150px 150px; */
+            /* grid-template-columns: [col1-start] 150px [col2-start] 150px [col3-start] 150px [col3-end]; */
+            grid-template-columns: [col] 150px [col] 150px [col] 150px [col];
+            /* grid-template-rows: 200px  300px ; */
+            /* grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end]; */
+            grid-template-rows: [row] auto [row] auto [row] auto [row];
+
+            grid-gap: 10px;
+        }
+        .grid-item{
+            background: #333;
+            color: white;
+            border-radius: 2px;
+            padding: 40px;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .item-a{
+            /* grid-column: col1-start/col3-end; */
+            grid-column: col 1/col 3;
+        }
+        .item-b{
+            /* grid-row: 2/4; */
+            /* grid-row:row2-start/row3-end; */
+            /* grid-row:row 2/span 2; */
+            grid-row:row 2/row 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item-a">A</div>
+        <div class="grid-item item-b">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        
+    </div>
+</body>
+</html>

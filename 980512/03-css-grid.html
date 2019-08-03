@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        display: grid;
+        padding-top: 40px;
+        justify-content: center;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        grid-gap: 10px;
+    }
+    .grid-item{
+        background: #333333;
+        color: white;
+        border-radius: 3px;
+        padding: 40px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .item-a{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+    .item-d{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .item-f{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item-a">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item item-c">C</div>
+        <div class="grid-item item-d">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item item-f">F</div>
+    </div>
+</body>
+</html>
