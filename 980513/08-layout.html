@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lay-out</title>
+    <style>
+    body{
+        display: grid;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-areas:         
+            "header header header"
+            "sidebar content content"
+            "sidebar footer footer";
+        grid-gap: 10px;
+    }
+    .box{
+        background: black;
+        color: gold;
+        border-radius: 2px;
+        padding: 40px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header{
+        grid-area: header;
+    }
+    .sidebar{
+        grid-area: sidebar;
+    }
+    .content{
+        grid-area: content;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box header">header</div>
+        <div class="box sidebar">sidebar</div>
+        <div class="box content">content</div>
+        <div class="box footer">footer</div>
+    </div>
+</body>
+</html>

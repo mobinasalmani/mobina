@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout</title>
+    <style>
+    /* body{
+        display: grid;
+        justify-content: center;
+        padding-top: 40px;;
+    } */
+    .container{
+        display: grid;
+        grid-template-areas: 
+            " header"
+            "left-sidebar"
+            " content" 
+            "right-sidebar"
+            "footer";
+        grid-gap: 10px;
+    }
+    @media(min-width:576px){
+        .container{
+            grid-template-columns: 30% auto;
+            grid-template-areas: 
+            "header header"
+            "left-sidebar content"
+            "right-sidebar right-sidebar"
+            "footer footer";
+            grid-gap: 20px;
+        }
+    }
+    @media(min-width:992px){
+        .container{ 
+        grid-template-columns:30% auto 30%; 
+        grid-template-areas:  
+            "header header header"
+            "left-sidebar content right-sidebar"
+            "footer footer footer";
+            grid-gap: 5px;
+            }
+    
+    }
+    .box{
+        background: black;
+        color: rgb(250, 147, 164);
+        padding: 40px;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header{
+        grid-area: header;
+    }
+    .left-sidebar{
+        grid-area: left-sidebar;
+    }
+    .content{
+        grid-area: content;
+    }
+    .right-sidebar{
+        grid-area: right-sidebar;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">header</div>
+        <div class="box left-sidebar">left-sidebar</div>
+        <div class="box content">content</div>
+        <div class="box right-sidebar">right-sidebar</div>
+        <div class="box footer">footer</div>
+    </div>
+</body>
+</html>
