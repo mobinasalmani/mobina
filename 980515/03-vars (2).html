@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>input value</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: #f1f1f1;
+            padding: 20px;
+        }
+
+        button,
+        p#demo {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="inputNumber">Please enter a number:</label><br>
+        <input type="text" id="inputNumber"><br>
+        <button onclick="myFunction()">ok</button><br>
+        <input type="text" id="prompt">
+    </div>
+    <script>
+        // reuseablity
+        //global vars
+        let inputNumber=document.getElementById("inputNumber");
+        let anotherInputNumber=document.getElementsByTagName("input")[1];
+        function myFunction() {
+            // local vars
+            let number = inputNumber.value;
+            let result = number * 2;
+            anotherInputNumber.value = result;
+        }
+    </script>
+</body>
+
+</html>

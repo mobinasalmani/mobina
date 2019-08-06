@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <input type="text" id="number1"><br>
+        <input type="text" id="number2"><br>
+        <button onclick="myFunction()" >ok</button><br>
+        <p id="demo"></p>
+    </div>
+    <script>
+    let number1=document.getElementById("number1");
+    let number2=document.getElementById("number2");
+    let para=document.getElementById("demo");
+    function myFunction(){
+        console.log(typeof(number1.value), typeof(number2.value));
+        //datatype convertation
+        let result =parseInt(number1.value)  + parseInt(number2.value);
+        console.log(typeof(result));
+        para.innerText=result;
+
+    }
+    </script>
+</body>
+</html>

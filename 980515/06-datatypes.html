@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>input box</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: #f1f1f1;
+            padding: 20px;
+        }
+
+        button {
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="inputbox"> :لطفا عدد اول را وارد کنید</label><br>
+        <input type="text" id="inputbox"><br>
+        <label for="inputbox"> :لطفا عدد دوم را وارد کنید</label><br>
+        <input type="text" id="inputbox"><br>
+        <button onclick="boxFunction()">Ok</button><br>
+        <input type="text" id="prompt">
+        <p id="demo"></p>
+    </div>
+    <script>
+        let inputbox = document.getElementById("inputbox");
+        let anotherInpuutbox = document.getElementsByTagName("input");
+        function boxFunction() {
+            let box = inputbox.value;
+            let result = box+result;
+            anotherInpuutbox.value = result;
+        }
+    </script>
+</body>  
+<html>
